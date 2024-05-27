@@ -12,6 +12,7 @@ body {
         font-size: 24px;
         font-family: 'open-regular';
     }
+    a{text-decoration: none;}
 }
 
 body::-webkit-scrollbar {
@@ -1035,6 +1036,26 @@ h1{
 }
 
 @media screen and (max-width:520px) {
+    .my-process {
+        & .process-steps {
+            & .step-inner {
+                >div.process-img {
+                    margin-bottom: 0px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .portfolio {
+        padding-top:0px;
+        .v-more {
+            margin-bottom: 30px;
+        }
+    }
+    .contact-me-inner {
+        a{display:inline-block;}
+    }
     .exp-inner{flex-direction: column;}
     .contact-me{padding-bottom:20px;}
     .meet,.discuss-projects{padding:20px!important;}
